@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<>
 			<Flex justify="start" align="start" flexDir="column" mt={32}>
-				<Heading size="lg" as="h1" mb={8}>
+				<Heading size="xl" as="h1" mb={8}>
 					Hey, I'm Dom
 				</Heading>
 				<Text>
@@ -17,7 +17,9 @@ export default function Home() {
 				</Text>
 			</Flex>
 			<Flex justify="start" align="center" flexDir="column" mt={32}>
-				<Heading as="h2">Lastest Posts</Heading>
+				<Heading as="h2" fontSize="1.8rem">
+					Lastest Posts
+				</Heading>
 			</Flex>
 		</>
 	);

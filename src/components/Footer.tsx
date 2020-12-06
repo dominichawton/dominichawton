@@ -1,5 +1,6 @@
 import { chakra, Flex, Text } from '@chakra-ui/react';
 import React from 'react';
+import NowPlaying from './NowPlaying';
 
 function Footer() {
 	return (
@@ -12,6 +13,7 @@ function Footer() {
 				mx="auto"
 				w="95%"
 			>
+				<NowPlaying />
 				<Text fontSize=".8rem">&copy; Dominic Hawton 2020</Text>
 			</Flex>
 		</chakra.footer>
