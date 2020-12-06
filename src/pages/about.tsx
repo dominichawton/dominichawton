@@ -20,7 +20,7 @@ function AboutPage() {
 					src={'/static/images/dom.jpg'}
 					height={250}
 					width={250}
-					borderRadius="50%"
+					borderRadius="xl"
 					ml={24}
 					shadow="md"
 				/>

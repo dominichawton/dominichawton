@@ -14,7 +14,7 @@ function PostPreview({ title, excerpt, imageUrl, views, tags }) {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const borderColor = {
 		light: 'gray.200',
-		dark: 'gray.700',
+		dark: 'gray.800',
 	};
 	return (
 		<Flex
@@ -23,6 +23,17 @@ function PostPreview({ title, excerpt, imageUrl, views, tags }) {
 			w="100%"
 			borderBottom="1px solid"
 			borderColor={borderColor[colorMode]}
+			transition=".15s linear all"
+			transform="scale(1)"
+			px={6}
+			shadowColor={borderColor[colorMode]}
+			_hover={{
+				borderColor: 'transparent',
+				cursor: 'pointer',
+				shadow: 'lg',
+				transform: 'scale(1.01)',
+				borderRadius: 'lg',
+			}}
 		>
 			<Image src={imageUrl} height={100} width={100} borderRadius="md" my={8} />
 			<Flex

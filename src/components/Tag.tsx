@@ -16,7 +16,7 @@ function Tag({ color = 'gray', tagName = 'undefined' }: TagProps) {
 				px={3}
 				backgroundColor={`${color}.100`}
 				borderRadius="3rem"
-				transition=".15s all ease-in"
+				transition=".15s all linear"
 				_hover={{ backgroundColor: color + '.50', shadow: 'md' }}
 			>
 				<Text fontWeight="600" color={`${color}.800`} fontSize=".75rem">
