@@ -1,5 +1,6 @@
-import { Flex, Heading, Text } from '@chakra-ui/react';
+import { Flex, Heading, Text, Image } from '@chakra-ui/react';
 import React from 'react';
+import TopTracks from '../components/TopTracks';
 
 function AboutPage() {
 	return (
@@ -7,13 +8,24 @@ function AboutPage() {
 			<Heading as="h1" size="lg" mb={6}>
 				About
 			</Heading>
-			<Text>
-				Hey, I'm Dom 👋 I'm a full-stack web developer and designer. I was born
-				and raised in Byron Bay but I'm now based in Sydney, Australia. I
-				curerntly work for MindSpot helping create an accessible mental-health
-				platform for all Australians. When I'm not working, I'm usually either
-				reading, running, or writing.
-			</Text>
+			<Flex align="start" justify="space-between" mb={32}>
+				<Text>
+					Hey, I'm Dom 👋 I'm a full-stack web developer and designer. I was
+					born and raised in Byron Bay but I'm now based in Sydney, Australia. I
+					currently work at MindSpot helping provide accessible mental-health
+					care for all Australians. When I'm not working, I'm usually either
+					reading, running, or writing.
+				</Text>
+				<Image
+					src={'/static/images/dom.jpg'}
+					height={250}
+					width={250}
+					borderRadius="50%"
+					ml={24}
+					shadow="md"
+				/>
+			</Flex>
+			<TopTracks />
 		</Flex>
 	);
 }

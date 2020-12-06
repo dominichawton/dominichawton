@@ -23,17 +23,6 @@ function Header() {
 			</Link>
 			<Flex justify="center" align="center">
 				<NavLink
-					href="/dashboard"
-					color={
-						router.pathname === '/dashboard'
-							? activeColor[colorMode]
-							: 'gray.500'
-					}
-					ml={16}
-				>
-					Dashboard
-				</NavLink>
-				<NavLink
 					href="/blog"
 					color={
 						router.pathname === '/blog' ? activeColor[colorMode] : 'gray.500'
